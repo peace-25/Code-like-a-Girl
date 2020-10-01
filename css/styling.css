@@ -37,23 +37,24 @@ html {
     opacity: 1;
     visibility: visible;
   }
-  
-  
   .subheading{
-    padding: 30px 0 50px;
-	background: white;
+  font-family: 'Piazzolla', serif;
+  padding: 30px 0 50px;
+  background: white;
+  color:#343a40;
+  font-weight: 650;
 	text-align: center;
-    position: relative;
+  position: relative;
 	margin-bottom: 40px;
 	font-size: 40px;
-	font-weight: 400;
-	text-decoration-color : #141371;
+  font-weight: 400;
+  border-bottom: 1px solid #343a40;
+  padding-bottom: 3px; 
 	text-align: center;
 	line-height: 60px;
 	letter-spacing: 1px;
-
-  }
-  .box {
+}
+.box {
     height: 200px;
     background:#85d89a;
     width: 33.3%;
@@ -163,7 +164,7 @@ html {
 
   /* Slideshow container */
   .slideshow-container {
-    max-width: 500px;
+    /* max-width: 500px; */
     position: relative;
     margin: auto;
     /* height: 500px;
@@ -229,7 +230,7 @@ html {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 10px 4px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -249,11 +250,11 @@ html {
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .5} 
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .5} 
     to {opacity: 1}
   }

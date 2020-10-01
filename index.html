@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/styling.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -311,54 +312,43 @@
 
      <!-- Slideshow container -->
      <div class="mt-5"></div>
-    <div class="subheading">GALLERY</div>
+    <div class="subheading">Gallery</div>
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div  class="carousel slide" data-ride="carousel">
+    <div style="text-align:center;"  class="carousel-indicators">
+      <!-- The dots/circles -->
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active fade">
+        <img class="d-block w-100" src="data/pic1.jpg" height="450" alt="First slide">
+      </div>
+      <div class="carousel-item fade">
+        <img class="d-block w-100" src="data/pic2.jpg" height="450" alt="Second slide">
+      </div>
+      <div class="carousel-item fade">
+        <img class="d-block w-100" src="data/pic3.jpg" height="450" alt="Third slide">
+      </div>
+      <div class="carousel-item fade">
+        <img class="d-block w-100" src="data/pic4.jpg" height="450" alt="Fourth slide">
+      </div>
+      <div class="carousel-item fade">
+        <img class="d-block w-100" src="data/pic5.jpg" height="450" alt="Fifth slide">
+      </div>
+    </div>
 
-    <img src="data/pic1.jpg" style="width:100%">
-
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-
-  <div class="mySlides fade">
-
-    <img src="data/pic2.jpg" style="width:100%">
-
-  </div>
-
-  <div class="mySlides fade">
-
-    <img src="data/pic3.jpg" style="width:100%">
-
-  </div>
-
-  <div class="mySlides fade">
-
-    <img src="data/pic4.jpg" style="width:100%">
-
-  </div>
-  <div class="mySlides fade">
-
-    <img src="data/pic5.jpg" style="width:100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>
-
-    <script>
+<script>
 
       var btn = $('#button');
 
